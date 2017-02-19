@@ -1,15 +1,15 @@
-import math
+"""
+    Returns an array of powered numbers by the amount of times it has to be applied.
 
-def powers_of_two(n):
-    powerArray = [1]
+    @:arg   {Integer}    amount   the number of times the power has to be applied
+    @:returns {Array}
+"""
+def powers_of_two(amount):
+    powerArray = []
 
-    for i in range(n):
-        powered = int(math.pow(2, i + 1))
-        powerArray.append(powered)
+    for i in range(0, amount + 1):
+        powerArray.append(2**i)
 
     return powerArray
 
-def test():
-    print(powers_of_two(2))
-
-test()
+print(powers_of_two(2))
