@@ -10,6 +10,6 @@ def powers_of_two(n):
     return powerArray
 
 def test():
-    print powers_of_two(2)
+    print(powers_of_two(2))
 
 test()
